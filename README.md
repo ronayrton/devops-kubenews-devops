@@ -39,7 +39,7 @@ Veja na pasta `/logs` os prints do uso da IA
 - FileSystem que ja possui uma base e adiciona mais arquivos emcima
 
 # Definição do dockerfile
-```yml
+```dockerfile
 FROM
 WORKDIR
 COPY
