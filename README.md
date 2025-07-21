@@ -21,3 +21,51 @@ A IA foi usada para:
 Veja na pasta `/logs` os prints do uso da IA
 
 
+# Ativar IA da Docker
+
+- Logon na conta da docker
+- Vai na engrenagem e seleciona Beta features, e ativa na opção Enable Docker AI
+- Vai aparecer a IA ASK GORDON
+- Necessário esta com docker desktop atualizado.
+
+# Prompat para criar uma imagem com a IA
+
+- Execute um container usando a imagem nginx e com um publish de porta 8080:80
+- Crie o container com essas informações
+
+
+## O que é imagem
+
+- FileSystem que ja possui uma base e adiciona mais arquivos emcima
+
+# Definição do dockerfile
+
+FROM
+WORKDIR
+COPY
+RUN
+COPY ..
+EXPOSE
+CMD
+
+
+## Enviar imagem para o Docker Hub
+
+- Namespace/repositorio:tag
+- ronayrton/app-maratona:v1
+
+## Colocando a versão na imagem
+
+## Autenticar via terminal no docker hub e enviar imagem
+- Docker login
+- docker push ronayrton/app-maratona:v1
+- Podem colocar quantas imagem quiser, desde que seja público
+
+
+## Interação do o Docker AI no Power Shell
+- docker ai
+
+- Analise o projeto conversao temperatura no diretorio ./src e avalie o dockerfile em relação a qualidade e possiveis melhorias. Responda em portugues Brasil.
+
+- Ele vai mostrar o que deve melhorar, mas é importante voce saber o que tem que fazer.
+
