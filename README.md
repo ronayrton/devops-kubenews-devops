@@ -69,3 +69,17 @@ CMD
 
 - Ele vai mostrar o que deve melhorar, mas é importante voce saber o que tem que fazer.
 
+## Etapas
+
+- Devops e importancia na carreira
+- Pilares, fundamentos e vantagens Devops
+- Etapas fluxo devops
+- Docker e Container
+- Criação de container DB
+- Criação de Imagens
+- Interação com a AI
+
+
+# Proxima Etapa
+
+O docker ele ajuda bastante, porém ajudar a executar app de forma isolada. Quando agente fala em escalar as apps, resiliencia, tornar mais eficiente em ambiente produção, ter muito mais disponibilidade, aí que entra o Kubernetes. 
