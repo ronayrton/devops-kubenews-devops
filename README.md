@@ -39,7 +39,7 @@ Veja na pasta `/logs` os prints do uso da IA
 - FileSystem que ja possui uma base e adiciona mais arquivos emcima
 
 # Definição do dockerfile
-
+```yml
 FROM
 WORKDIR
 COPY
@@ -47,7 +47,7 @@ RUN
 COPY ..
 EXPOSE
 CMD
-
+```
 
 ## Enviar imagem para o Docker Hub
 
