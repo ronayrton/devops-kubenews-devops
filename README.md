@@ -4,14 +4,8 @@
 
 ## Sobre o projeto
 
-O **KubeNews** é uma aplicação Node.js para publicação de notícias, criada para demonstrar práticas modernas de conteinerização com Docker. O objetivo deste lab é mostrar como construir, empacotar e rodar aplicações modernas de forma simples, portátil e escalável.
+O **KubeNews** é uma aplicação Node.js para publicação de notícias, criada para demonstrar práticas modernas de conteinerização com Docker. O objetivo deste lab é mostrar como construir, empacotar e rodar aplicações modernas de forma simples, portátil e escalável usando o Docker.
 
-> **Este projeto foi desenvolvido com auxílio do Cursor (AI pair programming, MCP), acelerando o desenvolvimento, documentação e boas práticas.**
-
-### Motivação
-- Garantir **portabilidade** e **facilidade de deploy** usando Docker
-- Demonstrar como rodar aplicações Node.js sem dependências externas
-- Pronto para ser expandido em labs futuros (Kubernetes, CI/CD, etc)
 
 ## Tecnologias utilizadas neste lab
 - **Node.js** + **Express** (backend)
