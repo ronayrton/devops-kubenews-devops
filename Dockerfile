@@ -1,15 +1,23 @@
-# Dockerfile for a Node.js application
+# Dockerfile para o app KubeNews
+# Imagem base Node.js Alpine (leve e rápida)
+FROM node:22-alpine
 
-FROM node:18
-# Set the working directory in the container
+# Define o diretório de trabalho dentro do container
 WORKDIR /app
-# Copy the rest of the application code from 'src'
+
+# Copia apenas os arquivos de dependências para instalar primeiro (cache eficiente)
 COPY src/package*.json ./
-# Install dependencies
-RUN npm install
-# Copy the rest of the application code
-COPY src/. .
-# Expose the port your application listens on
+
+# Instala as dependências do projeto
+RUN npm install --prefix ./
+
+# Copia o restante do código-fonte para o container
+COPY src/ ./
+
+# Define a porta padrão do app
+ENV PORT=8080
 EXPOSE 8080
-# O comando para iniciar uma aplicação Node.js é 'node', seguido do arquivo principal.
-CMD [ "node", "server.js" ]
+
+# Comando para iniciar o app
+CMD ["node", "server.js"] 
+
