@@ -1,6 +1,6 @@
 # 🐳 DevOps - KubeNews (Maratona DevOps com Fabricio Venorez)
 
-Projeto desenvolvido como parte da **Maratona DevOps** com [Fabricio Venorez](https://www.linkedin.com/in/fabriciovenorez/), onde trabalhamos com a aplicação **KubeNews**, uma aplicação simples para publicação de notícias com foco em práticas modernas de DevOps, Containers e uso de Inteligência Artificial no desenvolvimento.
+Projeto desenvolvido como parte da **Maratona DevOps** com [Fabricio Venorez](https://www.linkedin.com/in/fabricioveronez/), onde trabalhamos com a aplicação **KubeNews**, uma aplicação simples para publicação de notícias com foco em práticas modernas de DevOps, Containers e uso de Inteligência Artificial no desenvolvimento.
 
 ---
 
@@ -171,7 +171,7 @@ Analise o Dockerfile no diretório ./src e sugira melhorias. Responda em portugu
 
 - Automatizar deploy com infraestrutura como código (IaC).
 
-💼 Autor
+## 💼 Autor
 Ronayrton Rocha
 [LinkedIn](https://www.linkedin.com/in/ronayrton-rocha-13a872a8/)
 
