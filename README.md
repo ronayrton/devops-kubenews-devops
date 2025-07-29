@@ -93,7 +93,7 @@ Será solicitado seu nome de usuário e senha do Docker Hub.
 
 ```bash
 docker tag kubenews ronayrton/kubenews:v1
-Substitua ronayrton pelo seu nome de usuário no Docker Hub, se for diferente.
+Substitua ronayrton pelo seu nome de usuário no Docker Hub.
 ```
 
 3. **Envie a imagem para o Docker Hub:**
@@ -113,7 +113,7 @@ docker push ronayrton/kubenews:latest
 ## 📦 Docker Hub
 A imagem foi publicada no Docker Hub e pode ser acessada em:
 
-👉 https://hub.docker.com/r/seu-usuario/kubenews 
+👉 https://hub.docker.com/repository/docker/ronayrton/kubenews/
 
 ---
 
