@@ -64,7 +64,7 @@ Post.init({
 })
 
 exports.initDatabase = () => {
-    seque.sync({ alter: true })
+    seque.sync({ force: true }) // Usando force para recriar a tabela
 }
 
 exports.Post = Post;

@@ -14,34 +14,38 @@
     <%- include('./partial/header'); %>
     <main>
        <div class="post-form__container">
-          <h3 class="post-form__title">Novo Post</h3>
-          <form action="#" class="post-form__form" action="/post" method="post">
+          <h3 class="post-form__title"><%= post ? 'Editar Post' : 'Novo Post' %></h3>
+          <form action="/post" method="post" class="post-form__form">
             <div class="post-form__group">
-              <label for="" class="post-form__label">Título</label>
-              <input type="text" class="post-form__input" id="title" name="title" placeholder="Escreva o título da notícia" value="<%= post.title %>">
-              <% if (valido === false) {%>
+              <label for="title" class="post-form__label">Título</label>
+              <input type="text" class="post-form__input" id="title" name="title" placeholder="Escreva o título da notícia" value="<%= post ? post.title : '' %>">
+              <% if (typeof valido !== 'undefined' && valido === false) {%>
               <div class="post-form__error">
                 Esse campo é obrigatório e deve ter no máximo 30 caracteres
               </div>
               <% } %>  
             </div>
             <div class="post-form__group">
-              <label for="" class="post-form__label">Resumo</label>
-              <input type="text" class="post-form__input" id="resumo" name="resumo" placeholder="Escreva o resumo da notícia" value="<%= post.summary %>">
-              <% if (valido === false) {%>
+              <label for="summary" class="post-form__label">Resumo</label>
+              <input type="text" class="post-form__input" id="summary" name="summary" placeholder="Escreva o resumo da notícia" value="<%= post ? post.summary : '' %>">
+              <% if (typeof valido !== 'undefined' && valido === false) {%>
               <div class="post-form__error">
                 Esse campo é obrigatório e deve ter no máximo 30 caracteres
               </div>
               <% } %>  
             </div>
             <div class="post-form__group">
-              <label for="" class="post-form__label">Notícia</label>
-              <textarea class="post-form__textarea" id="description" name="description" cols="30" rows="10" placeholder="Escreva a sua notícia..."><%= post.content %></textarea>
-              <% if (valido === false) {%>
+              <label for="content" class="post-form__label">Notícia</label>
+              <textarea class="post-form__textarea" id="content" name="content" cols="30" rows="10" placeholder="Escreva a sua notícia..."><%= post ? post.content : '' %></textarea>
+              <% if (typeof valido !== 'undefined' && valido === false) {%>
               <div class="post-form__error">
                 Esse campo é obrigatório e deve ter no máximo 30 caracteres
               </div>
               <% } %>  
+            </div>
+            <div class="post-form__group">
+              <label for="publishDate" class="post-form__label">Data de Publicação</label>
+              <input type="date" class="post-form__input" id="publishDate" name="publishDate" value="<%= post ? post.publishDate : '' %>">
             </div>
             <button class="post-form__button" type="submit">Salvar</button>
           </form>

@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-
 let isHealth = true;
 let readTime = new Date(Date.now());
 let isRead = () => { 
@@ -9,13 +8,8 @@ let isRead = () => {
 };
 
 router.put('/stress/tempo/:tempoStress/intervalo/:intervalo/ciclos/:ciclos', (req, res) => {
-
-    const elemento = 'cpu';
-    const tempoStress = req.params.tempoStress * 1000;
-    const tempoFolga = req.params.tempoFolga * 1000;
-    const ciclos = req.params.ciclos;
-    new NodeHog(elemento, tempoStress, tempoFolga, ciclos).start();
-    res.send("OK");
+    // Função de stress removida por enquanto
+    res.send("OK - Stress function temporarily disabled");
 });
 
 router.get('/ready', (req, res) => {
