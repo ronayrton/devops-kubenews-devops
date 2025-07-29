@@ -71,7 +71,7 @@ docker build -t ronayrton/kubenews:latest .
 3. **Execute o container:**
 
 ```bash
-docker run -d -p 3000:3000 ronayrton/kubenews:latest
+docker run -d -p 8080:8080 ronayrton/kubenews:latest
 ```
 
 4. **Popule dados (opcional):**
